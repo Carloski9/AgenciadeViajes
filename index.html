@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Delmiro | Los adultos viajan gratis</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <div class="logo">
+            <h1>🌴 Viajes Delmiro</h1>
+            <p>Donde tú descansas gratis y la criatura paga.</p>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#info">¿Cómo funciona?</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2 class="animate__animated animate__bounceInDown">✈️ ¡Déjate el sueldo en tus hijos, pero no en ti! 🍹</h2>
+                <p>Somos la única agencia del mundo donde los adultos tienen barra libre, masajes y vuelos a coste cero. ¿El truco? Le cobramos el triple al niño de 8 años 🤫.</p>
+                <div class="oferta-destacada animate__animated animate__pulse animate__infinite">
+                    <strong>🔥 OFERTA:</strong> Si el niño llora en el avión, te regalamos un mojito 🍸.
+                </div>
+                <div class="botones-hero">
+                    <a href="#destinos" class="btn btn-primario">Ver destinos 🗺️</a>
+                    <a href="#contacto" class="btn btn-secundario">Reservar ya 💳</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinos" class="destinos">
+            <h2>Nuestros Destinos Estrella ⭐</h2>
+            <div class="grid-destinos">
+                
+                <article class="card">
+                    <h3>🎢 Disneyland - Ruina Infantil</h3>
+                    <p>Conoce a Mickey Mouse. Los padres descansan en el spa VIP mientras los niños hacen cola bajo el sol.</p>
+                    <div class="precio">
+                        <span class="precio-adulto">Adultos: 0€</span>
+                        <span class="precio-nino">Niños: 3.500€</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-primario">¡Lo quiero!</a>
+                </article>
+
+                <article class="card">
+                    <h3>🚢 Crucero por las Bahamas</h3>
+                    <p>Camarotes con balcón para los padres. Los menores viajan en la sala de máquinas aprendiendo el valor del esfuerzo.</p>
+                    <div class="precio">
+                        <span class="precio-adulto">Adultos: 0€</span>
+                        <span class="precio-nino">Niños: 1.800€</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-primario">¡Lo quiero!</a>
+                </article>
+
+                <article class="card">
+                    <h3>🦁 Safari en Kenia</h3>
+                    <p>Safaris fotográficos seguros para adultos. Los niños ayudan al guía a localizar a los leones de cerca.</p>
+                    <div class="precio">
+                        <span class="precio-adulto">Adultos: 0€</span>
+                        <span class="precio-nino">Niños: 2.100€</span>
+                    </div>
+                    <a href="#contacto" class="btn btn-primario">¡Lo quiero!</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="info" class="informacion">
+            <h2>¿Cómo funciona nuestra promoción? 🤔</h2>
+            <ul class="lista-pasos">
+                <li><strong>Paso 1:</strong> Eliges el destino de tus sueños 🏖️.</li>
+                <li><strong>Paso 2:</strong> Rompes la hucha del cerdito de tu hijo 🐖🔨.</li>
+                <li><strong>Paso 3:</strong> Nosotros le facturamos todos los costes operativos a los menores de 18 años 📝.</li>
+                <li><strong>Paso 4:</strong> Tú disfrutas gratis. Sin letra pequeña (para ti) 😎.</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contacta con nosotros 📬</h2>
+            <form action="#" class="formulario">
+                <div class="grupo-form">
+                    <label for="nombre">Nombre del padre/madre afortunado:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="mensaje">¿Cuántos niños van a pagar el viaje?:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primario btn-form">Enviar petición 🚀</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Viajes Delmiro. Todos los derechos reservados.</p>
+        <p>Tel: 555-VIAJES | Síguenos en @ViajesDelmiro</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  
+            console.log("%c¡Buenos días Maestro!", "color: #f1c40f; font-size: 16px; font-weight: bold;");
+            console.log("Profe, si estás leyendo esto: 'Pues ayer funcionaba... En mi pc sí corre' 😂 ¡Besos y Abrasos!");
+
+            // ANIMACIÓN GSAP: Las tarjetas aparecen desde abajo suavemente al cargar la web
+            gsap.from(".card", {
+                duration: 2, 
+                y: 100, 
+                opacity: 0, 
+                stagger: 0.5, // Aparecen una tras otra
+                ease: "power3.out",
+                delay: 0.5
+            });
+        });
+    </script>
+</body>
+</html>
